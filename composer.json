@@ -27,8 +27,8 @@
     "require": {
         "php": "^7.3 || ~8.0.0",
         "laminas-api-tools/api-tools-api-problem": "^1.4.0",
-        "laminas-api-tools/api-tools-content-negotiation": "^1.5.0",
-        "laminas-api-tools/api-tools-oauth2": "^1.7",
+        "laminas-api-tools/api-tools-content-negotiation": "dev-http-request",
+        "laminas-api-tools/api-tools-oauth2": "1.8.x-dev",
         "laminas/laminas-authentication": "^2.5.3",
         "laminas/laminas-eventmanager": "^3.2",
         "laminas/laminas-http": "^2.5.4",
@@ -69,5 +69,15 @@
     },
     "replace": {
         "zfcampus/zf-mvc-auth": "^1.5.1"
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/bfoosness/api-tools-content-negotiation.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/iquestab/api-tools-oauth2"
+        }
+    ]
 }
